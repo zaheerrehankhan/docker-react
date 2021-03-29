@@ -9,4 +9,4 @@ before_install:
 
 
 script:
-        - docker run cookienomisar/docker-react npm run test -- --coverage
+        - docker run -e CI=true cookienomisar/docker-react npm run test
